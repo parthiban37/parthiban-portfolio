@@ -1,0 +1,9 @@
+{
+  "name": "parthiban-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site with a local contact API",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

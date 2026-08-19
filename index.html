@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parthiban R — AI & Data Science Engineer</title>
+<meta name="description" content="Portfolio of Parthiban R, final-year B.Tech Artificial Intelligence & Data Science student — machine learning, computer vision, data analytics and UI/UX design.">
+
+<!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Skip link for accessibility -->
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Parthiban R home">
+      <span class="logo-mark">
+        <span class="logo-badge">P<span class="logo-dot">R</span></span>
+        <span class="logo-word">PARTHIBAN <i>R</i></span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-nav>Home</a>
+      <a href="#about" class="nav-link" data-nav>About</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="#internships" class="nav-link" data-nav>Internships</a>
+      <a href="#certifications" class="nav-link" data-nav>Certifications</a>
+      <a href="#achievements" class="nav-link" data-nav>Achievements</a>
+      <a href="#education" class="nav-link" data-nav>Education</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas id="neuralCanvas" class="neural-canvas" aria-hidden="true"></canvas>
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="hero-inner reveal">
+    <p class="hero-eyebrow"><span class="eyebrow-dot"></span>Open to opportunities</p>
+    <h1 class="hero-title">
+      <span class="hero-phrase">Curious by nature.<br>Intelligent by design.</span>
+      <button class="hero-name" id="heroName" type="button" aria-label="Animate Parthiban R signature">
+        <span class="name-mark"></span> <span>Parthiban</span> <em>R</em>
+      </button>
+    </h1>
+    <p class="hero-subtitle">AI &amp; Data Science Engineer <span class="subtitle-sep">·</span> UI/UX &amp; Data Analytics Enthusiast</p>
+    <p class="hero-desc">
+      Final-year B.Tech Artificial Intelligence &amp; Data Science student at Kongunadu College of Engineering &amp; Technology.
+      I explore machine learning, computer vision, and thoughtful interface design — and enjoy picking up new AI tools and
+      turning them into practical, working projects.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="assets/Parthiban_R_Resume.pdf" class="btn btn-ghost" download>Download Resume <i class="fa-solid fa-download"></i></a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/parthiban-r-850a3a32b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/parthiban37" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:parthibanrangasamy96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <figure class="hero-image reveal">
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Abstract artificial intelligence neural network visualization" width="900" height="600" fetchpriority="high">
+    <figcaption>AI, made practical</figcaption>
+  </figure>
+
+  <a href="#about" class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">01 — About</p>
+    <h2 class="section-title reveal">Turning data into decisions, and ideas into interfaces</h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+       <p> I am a final-year B.Tech Artificial Intelligence and Data Science student at Kongunadu College of Engineering and Technology with a strong interest in Artificial Intelligence, Machine Learning, and Data Analytics. I have hands-on experience developing academic projects involving Deep Learning, Computer Vision, and Machine Learning. </p>
+
+<p> My technical skills include Java, Python, MySQL, HTML, and CSS, along with experience using development tools such as VS Code, IntelliJ IDEA, GitHub, and Postman. I have also gained practical exposure to Machine Learning, Deep Learning, data preprocessing, predictive analytics, and AI-based applications through academic projects and internships. </p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <span class="stat-number" data-count="7.3" data-decimal="1">0</span>
+          <span class="stat-label">Current CGPA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="7" data-decimal="0">0</span>
+          <span class="stat-label">Technical Skills</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="2" data-decimal="0">0</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="2" data-decimal="0">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="location-chip reveal">
+      <i class="fa-solid fa-location-dot"></i> Based in Namakkal, Tamil Nadu, India
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">02 — Skills</p>
+    <h2 class="section-title reveal">Technical skills</h2>
+    <p class="section-lead reveal">Core languages and disciplines I've built a working foundation in.</p>
+
+    <div class="skills-grid reveal">
+      <!-- Skill cards injected structure -->
+      <div class="skill-card" data-level="4" data-tier="Working knowledge">
+        <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+        <h3>Java</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Working knowledge</p>
+      </div>
+
+      <div class="skill-card" data-level="5" data-tier="Core skill">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Python</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Core skill</p>
+      </div>
+
+      <div class="skill-card" data-level="4" data-tier="Working knowledge">
+        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+        <h3>HTML</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Working knowledge</p>
+      </div>
+
+      <div class="skill-card" data-level="4" data-tier="Working knowledge">
+        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3>CSS</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Working knowledge</p>
+      </div>
+
+      <div class="skill-card" data-level="3" data-tier="Familiar">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>MySQL</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Familiar</p>
+      </div>
+
+      <div class="skill-card" data-level="4" data-tier="Working knowledge">
+        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Data Analytics</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Working knowledge</p>
+      </div>
+
+      <div class="skill-card" data-level="3" data-tier="Familiar">
+        <div class="skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>UI/UX Design</h3>
+        <div class="skill-bar"><span></span></div>
+        <p class="skill-tier">Familiar</p>
+      </div>
+    </div>
+
+    <h3 class="tools-heading reveal">Development &amp; AI tools</h3>
+    <div class="tools-grid reveal">
+      <div class="tool-chip"><i class="fa-solid fa-code"></i> VS Code</div>
+      <div class="tool-chip"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
+      <div class="tool-chip"><i class="fa-solid fa-meteor"></i> Antigravity</div>
+      <div class="tool-chip"><i class="fa-solid fa-paper-plane"></i> Postman</div>
+      <div class="tool-chip"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+      <div class="tool-chip"><i class="fa-solid fa-comments"></i> ChatGPT</div>
+      <div class="tool-chip"><i class="fa-solid fa-robot"></i> Claude AI</div>
+      <div class="tool-chip"><i class="fa-solid fa-star"></i> Gemini</div>
+      <div class="tool-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Emerging AI Tools</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Selected projects</h2>
+    <p class="section-lead reveal">Applied machine learning work built around real-world data problems.</p>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-glow"></div>
+        <figure class="project-image-wrap">
+          <img class="project-image" src="assets/skin_disease_prediction.jpg" alt="Deep learning workflow for early skin disease prediction using a CNN model" width="1536" height="1024" fetchpriority="high">
+          <figcaption>Computer vision · CNN prediction workflow</figcaption>
+        </figure>
+        <div class="project-tag"><i class="fa-solid fa-stethoscope"></i> Healthcare AI</div>
+        <h3>Deep Learning Approach for Skin Disease Prediction</h3>
+        <p>
+          A deep-learning-based application that predicts skin diseases from medical images, using convolutional
+          neural networks to classify visual patterns and support faster preliminary diagnosis.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Deep Learning</span><span>CNN</span><span>Computer Vision</span><span>Machine Learning</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-glow"></div>
+        <figure class="project-image-wrap">
+          <img class="project-image" src="assets/plant_growth_prediction.jpg" alt="Machine learning workflow predicting plant growth from temperature, humidity, soil moisture, nutrients, and rainfall" width="1536" height="1024" loading="lazy">
+          <figcaption>AgriTech · growth prediction workflow</figcaption>
+        </figure>
+        <div class="project-tag"><i class="fa-solid fa-seedling"></i> AgriTech</div>
+        <h3>Plant Growth Prediction Using Machine Learning</h3>
+        <p>
+          A machine learning system that predicts plant growth using environmental and soil-related parameters,
+          including temperature, humidity, soil moisture, rainfall, and nutrient levels.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Machine Learning</span><span>Data Preprocessing</span><span>Feature Selection</span><span>Model Evaluation</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERNSHIPS ============ -->
+<section class="section section-alt" id="internships">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">04 — Internships</p>
+    <h2 class="section-title reveal">Practical experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"><i class="fa-solid fa-building"></i></div>
+        <div class="timeline-content">
+          <img class="experience-image" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Modern software company workspace representing engineering work at Inform Solutions" width="1000" height="560" loading="lazy">
+          <h3>Inform Solutions</h3>
+          <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> Namakkal</p>
+          <div class="project-stack">
+            <span>AI/ML</span><span>Computer Vision</span><span>Machine Learning</span><span>Deep Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"><i class="fa-solid fa-building"></i></div>
+        <div class="timeline-content">
+          <img class="experience-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Bright professional software office representing the Future Wise experience" width="1000" height="560" loading="lazy">
+          <h3>Future Wise</h3>
+          <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> Coimbatore</p>
+          <p>Explored new technologies and AI tools, gaining practical exposure to AI-based applications.</p>
+          <div class="project-stack">
+            <span>AI/ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certifications">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">05 — Certifications</p>
+    <h2 class="section-title reveal">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div>
+          <h3>Internet of Things</h3>
+          <p class="cert-issuer">NPTEL</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div>
+          <h3>Cloud Computing</h3>
+          <p class="cert-issuer">NPTEL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section section-alt" id="achievements">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">06 — Achievements</p>
+    <h2 class="section-title reveal">Hackathons, presentations &amp; workshops</h2>
+
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>College Hackathon</h3>
+        <p>Participated in a hackathon organized by the Department of Agricultural Engineering.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Inter-College Hackathon</h3>
+        <p>Participated in a hackathon at New Prince Shri Bhavani College of Engineering and Technology.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Hackathon / Event</h3>
+        <p>Participated in a hackathon event at Selvam College of Engineering.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Technical Presentation — GenAI</h3>
+        <p>Presented on Generative AI concepts and applications.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Technical Presentation — CNNs</h3>
+        <p>Presented on Convolutional Neural Networks and OI-related topics.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h3>Workshop — AI in Software &amp; Hardware</h3>
+        <p>Attended a workshop exploring AI applications across software and hardware systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">07 — Education</p>
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="edu-list">
+      <div class="edu-item reveal">
+        <div class="edu-mark"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="edu-body">
+          <h3>Kongunadu College of Engineering &amp; Technology</h3>
+          <p class="edu-degree">B.Tech — Artificial Intelligence and Data Science</p>
+          <div class="edu-meta">
+            <span><i class="fa-solid fa-calendar"></i> Final Year</span>
+            <span><i class="fa-solid fa-chart-simple"></i> CGPA: 7.3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-mark"><i class="fa-solid fa-school"></i></div>
+        <div class="edu-body">
+          <h3>Oxford Matriculation Higher Secondary School</h3>
+          <p class="edu-degree">Higher Secondary Education (12th)</p>
+          <div class="edu-meta">
+            <span><i class="fa-solid fa-chart-simple"></i> 78%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">08 — Contact</p>
+    <h2 class="section-title reveal">Let's build something together</h2>
+    <p class="section-lead reveal">Open to internships, entry-level roles, and collaborative AI/ML projects.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <figure class="contact-profile">
+          <img src="assets/parthiban-profile.jpg" alt="Portrait of Parthiban R" width="768" height="768">
+          <figcaption><span class="name-mark">//</span> The person behind the projects</figcaption>
+        </figure>
+        <div class="contact-row email-row">
+          <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+          <span>
+            <span class="contact-label">Email</span>
+            <a class="contact-value email-link" href="mailto:parthibanrangasamy96@gmail.com">parthibanrangasamy96@gmail.com</a>
+            <button class="contact-action copy-email" type="button" data-email="parthibanrangasamy96@gmail.com">
+              Copy email <i class="fa-solid fa-copy"></i>
+            </button>
+          </span>
+        </div>
+        <a class="contact-row" href="tel:+917806820351">
+          <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+          <span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 78068 20351</span>
+          </span>
+        </a>
+        <a class="contact-row" href="https://www.google.com/maps/search/?api=1&amp;query=Namakkal%2C%20Tamil%20Nadu%2C%20India" target="_blank" rel="noopener" aria-label="Open Namakkal, Tamil Nadu, India in Google Maps">
+          <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <span>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Namakkal, Tamil Nadu, India</span>
+            <span class="contact-action">Open map <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/parthiban-r-850a3a32b" target="_blank" rel="noopener">
+          <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+          <span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/parthiban-r-850a3a32b</span>
+          </span>
+        </a>
+        <a class="contact-row" href="https://github.com/parthiban37" target="_blank" rel="noopener">
+          <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+          <span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/parthiban37</span>
+          </span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="logo-mark small">
+      <span class="logo-badge">P<span class="logo-dot">R</span></span>
+      <span class="logo-word">PARTHIBAN <i>R</i></span>
+    </span>
+    <p>&copy; <span id="year"></span> Parthiban R. Built with curiosity and a lot of coffee.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/parthiban-r-850a3a32b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/parthiban37" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:parthibanrangasamy96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
